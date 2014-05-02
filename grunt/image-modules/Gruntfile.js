@@ -42,9 +42,25 @@ module.exports = function (grunt) {
         destImg: 'build/sprites.png',
         destCSS: 'build/sprites.css'
       }
-    }
+    },
 
-    // TODO responsive images
+    responsive_images: {
+      myTask: {
+        options: {
+          sizes: [
+            {width: 320},
+            {width: 640},
+            {width: 1024}
+          ]
+        },
+        files: [{
+          expand: true,
+          src: ['**.jpg'],
+          cwd: 'source/',
+          dest: 'build/'
+        }]
+      }
+    }
 
   });
 

@@ -6,12 +6,7 @@ var yeoman = require('yeoman-generator');
 
 var ExampleGenerator = module.exports = function Examplegenerator(args, options) {
   yeoman.generators.Base.apply(this, arguments);
-
   this.options = options;
-
-  this.pkg = JSON.parse(this.readFileAsString(
-    path.join(__dirname, '../package.json')
-  ));
 };
 
 util.inherits(ExampleGenerator, yeoman.generators.Base);

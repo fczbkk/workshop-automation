@@ -12,3 +12,10 @@ yo webapp
 
 # Run livereload
 grunt serve
+
+
+# Custom generator
+# ----------------
+
+# Link to local generator
+npm link 

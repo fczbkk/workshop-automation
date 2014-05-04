@@ -1,0 +1,9 @@
+{
+  "name": "<%= _.slugify(projectName) %>",
+  "version": "0.1.0",
+  "description": "Bower for <%= projectName %>",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}

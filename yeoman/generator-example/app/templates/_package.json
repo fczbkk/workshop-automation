@@ -1,0 +1,10 @@
+{
+  "name": "<%= _.slugify(projectName) %>",
+  "version": "0.1.0",
+  "description": "<%= projectName %>",
+  "private": true,
+  "dependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-coffee": "^0.10.1"
+  }
+}

@@ -1,0 +1,11 @@
+div {
+  box-sizing: border-box;
+}
+
+p {
+  background: linear-gradient(to bottom, red, blue)
+}
+
+a {
+  display: flex;
+}

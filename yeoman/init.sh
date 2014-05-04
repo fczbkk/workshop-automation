@@ -18,4 +18,10 @@ grunt serve
 # ----------------
 
 # Link to local generator
-npm link 
+npm link
+
+# Init project
+yo example
+
+# Use subgenerator
+yo example:page

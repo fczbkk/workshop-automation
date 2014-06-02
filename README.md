@@ -138,7 +138,7 @@ npm install
 gulp --task
 gulp -T
 
-# Spustenie defaultneho Grunt tasku
+# Spustenie defaultneho Gulp tasku
 gulp
 
 # Spustenie konkretneho Gulp tasku (napr. watch)

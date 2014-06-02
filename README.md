@@ -142,5 +142,5 @@ gulp -T
 gulp
 
 # Spustenie konkretneho Gulp tasku (napr. watch)
-grunt watch
+gulp watch
 ```

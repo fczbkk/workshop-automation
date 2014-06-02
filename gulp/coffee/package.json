@@ -1,0 +1,11 @@
+{
+  "name": "test-project",
+  "version": "0.1.0",
+  "description": "This is a test project.",
+  "devDependencies": {
+    "gulp": "^3.6.2"
+  },
+  "dependencies": {
+    "coffee-script": "^1.7.1"
+  }
+}

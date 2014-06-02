@@ -119,3 +119,28 @@ npm init
 # Pridaj lokalny Grunt (alebo ine moduly) do projektu
 npm install grunt --save-dev
 ```
+
+## Gulp
+
+### Inštalácia
+
+```shell
+npm install -g gulp
+```
+
+### Použitie v existujúcom projekte
+
+```shell
+# Nainstaluj vsetky zavislosti projektu
+npm install
+
+# Vypis vsetkych dostupnych taskov
+gulp --task
+gulp -T
+
+# Spustenie defaultneho Grunt tasku
+gulp
+
+# Spustenie konkretneho Gulp tasku (napr. watch)
+grunt watch
+```

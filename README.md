@@ -1,4 +1,4 @@
-# Automatizace s Grunt, Bower a Yeoman
+# Automatizace s Grunt a Gulp
 
 Podklady pre účastníkov školenia:
 http://www.vzhurudolu.cz/kurzy/grunt-gulp

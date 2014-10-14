@@ -1,27 +1,38 @@
 # Automatizace s Grunt, Bower a Yeoman
 
 Podklady pre účastníkov školenia:
-http://www.vzhurudolu.cz/kurzy/grunt-bower-yeoman/69
+http://www.vzhurudolu.cz/kurzy/grunt-gulp
 
 ## Inštalácia prostredia
 
-[Stiahni a nainštaluj Node.js](http://nodejs.org/). Budeš ho potrebovať an úplne všetko.
+* **Windows**
+  * Niektoré moduly vyžadujú systémové knižnice a cesty, ktoré defaultne vo Windows nie sú. Odporúčam [nainštalovať **Visual Studio Express**](http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx), ktoré tie veci nainštaluje a nastaví automaticky. Samotné Visual Studio nebudeme potrebovať ani používať.
+  * Štandardný terminál vo Windows je na nič. Odporúčam [**ConEmu**](https://code.google.com/p/conemu-maximus5/).
+  * [Stiahni a nainštaluj **Git**](http://git-scm.com/downloads). Pri inštalácii v kroku "Adjusting your PATH environment" vybrať voľbu "Run Git from the Windows Command Prompt". Viď screenshot: ![](http://dev.opencascade.org/doc/overview/html/OCCT_GitGuide_V2_image002.png)
 
-### Windows
-
-* Niektoré moduly vyžadujú systémové knižnice a cesty, ktoré defaultne vo Windows nie sú. Odporúčam [nainštalovať Visual Studio Express](http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx), ktoré tie veci nainštaluje a nastaví automaticky.
-* Štandardný terminál vo Windows je na nič. Odporúčam [ConEmu](https://code.google.com/p/conemu-maximus5/).
-
-## Bower
-
-### Inštalácia
+* **Mac**
+  * Odporúčam nainštalovať [terminál **iTerm 2**](http://iterm2.com/).
+  * **Git** by už mal byť v systéme nainštalovaný ako súčasť Xcode. Ak si ho ešte nikdy nepoužil, je možné, že pred jeho prvým použitím budeš musieť potvrdiť "Terms and conditions". Jednoducho spusť Xcode a potvrď prípadné dialógy, ktoré to zobrazí. Potom v konzole napíš `git`. Ak to bude hlásiť neznámy príkaz, tak [stiahni a nainštaluj **Git** manuálne](http://git-scm.com/downloads).
+* [Stiahni a nainštaluj **Node.js**](http://nodejs.org/). Budeš ho potrebovať na úplne všetko.
+* Nakoniec si globálne nainštaluj moduly **Grunt, Gulp, Yeoman a Bower**. V konzole postupne napíš tieto príkazy.
+  * **Mac** pri inštalácii globálnych modulov vyžaduje admin práva. Takže pred každý príkaz treba napísať `sudo`.
 
 ```shell
-# Globalna instalacia Boweru
+# globalna instalacia Grunt CLI
+npm install -g grunt-cli
+
+# globalna instalacia Gulp
+npm install -g gulp
+
+# globalna instalacia Yeoman
+npm install -g yo
+
+# globalna instalacia Bower
 npm install -g bower
 ```
 
-### Použitie
+
+## Bower
 
 ```shell
 # Stiahne najaktualnejsiu verziu jQuery a ulozi ju do bower_components/jquery
@@ -46,12 +57,9 @@ bower update
 
 ## Yeoman
 
-### Inštalácia
+### Práca s generátormi
 
 ```shell
-# Globalna instalacia Yeomana
-npm install -g yo
-
 # Instalacia generatoru (generatory treba instalovat globalne)
 npm install -g generator-webapp
 
@@ -59,7 +67,7 @@ npm install -g generator-webapp
 yo -h
 ```
 
-### Použitie
+### Príklad použitia
 
 ```shell
 # Vytvori scaffold noveho projektu
@@ -84,14 +92,6 @@ yo example:page
 ```
 
 ## Grunt
-
-### Inštalácia
-
-```shell
-# Globalna instalacia Grunt CLI.
-# Potrebujes to, aby si mohol pouzivat Grunt z prikazoveho riadku.
-npm install -g grunt-cli
-```
 
 ### Použitie v existujúcom projekte
 
@@ -121,12 +121,6 @@ npm install grunt --save-dev
 ```
 
 ## Gulp
-
-### Inštalácia
-
-```shell
-npm install -g gulp
-```
 
 ### Použitie v existujúcom projekte
 

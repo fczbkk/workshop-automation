@@ -1,0 +1,8 @@
+body {
+  background: white;
+  color: black;
+}
+
+div {
+  background: linear-gradient(to right, white 0%, black 100%);
+}

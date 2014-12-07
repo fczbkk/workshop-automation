@@ -1,4 +1,4 @@
 gulp = require 'gulp'
 
 gulp.task 'default', ->
-	console.log 'It works!'
+  console.log 'Funguje to!'

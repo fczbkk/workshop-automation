@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "This is a test project.",
   "devDependencies": {
-    "gulp": "^3.6.2"
+    "gulp": "^3.6.2",
+    "coffee-script": "^1.7.1"
   }
 }

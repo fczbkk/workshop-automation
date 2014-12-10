@@ -1,4 +1,7 @@
 gulp = require 'gulp'
+test = require '../test-gulp-plugin'
 
 gulp.task 'default', ->
-  console.log 'Funguje to!'
+  gulp.src 'input/*.txt'
+    .pipe test 'xxx'
+    .pipe gulp.dest 'output/'

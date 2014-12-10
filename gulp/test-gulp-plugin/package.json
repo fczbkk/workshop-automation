@@ -1,0 +1,13 @@
+{
+  "name": "test-gulp-plugin",
+  "version": "0.0.0",
+  "description": "A testing Gulp plugin",
+  "dependencies": {
+    "through2": "*",
+    "gulp-util": "~2.2.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  }
+}

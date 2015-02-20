@@ -22,16 +22,13 @@ module.exports = function (param) {
     }
 
     if (file.isStream()) {
-
       this.emit("error", getError("Stream content is not supported."));
       return callback();
     }
 
     if (file.isBuffer()) {
-
       file.contents = new Buffer(String(file.contents) + "\n" + param);
       this.push(file);
-
     }
     return callback();
   }

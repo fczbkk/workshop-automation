@@ -1,0 +1,7 @@
+{
+  "name": "01-install",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.8.10"
+  }
+}

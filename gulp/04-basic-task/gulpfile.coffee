@@ -7,13 +7,13 @@ gulp.task 'basic', ->
 
 # gulp-src (minimatch)
 gulp.task 'src', ->
-  result = gulp.src 'input/*'
+  result = gulp.src 'input/*.+(js|txt)'
   console.log 'src', result
 
 
 # gulp-dest (vinyl)
 gulp.task 'dest', ->
-  gulp.src 'input/*'
+  gulp.src 'input/**/*'
     .pipe gulp.dest 'output'
 
 

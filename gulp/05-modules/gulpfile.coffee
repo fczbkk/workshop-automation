@@ -14,6 +14,7 @@ coffee = require 'gulp-coffee'
 gulp.task 'coffee', ->
   gulp.src 'input/*.coffee'
     .pipe coffee()
+    .pipe concat 'scripts.js'
     .pipe gulp.dest 'output/'
 
 

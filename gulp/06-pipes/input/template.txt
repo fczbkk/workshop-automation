@@ -1,1 +1,3 @@
+text pred
 <%= lastname %>, <%= firstname %>
+text za

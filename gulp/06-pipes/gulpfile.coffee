@@ -55,12 +55,15 @@ gulp.task 'cache-remember', ->
 # async streams
 gulp.task 'merge-stream', ->
   merge (
+
     gulp.src 'input/library.js'
       .pipe uglify()
       .pipe gulp.dest 'output/'
+
     gulp.src 'input/*.coffee'
       .pipe coffee()
       .pipe gulp.dest 'output/'
+
   )
 
 
@@ -80,19 +83,10 @@ gulp.task 'stream-queue', ->
 # stream array
 gulp.task 'stream-array', ->
 
-  data =
-    first:
-      firstname: 'Riki'
-      lastname: 'Fridrich'
-    second:
-      firstname: 'John'
-      lastname: 'Doe'
-
   eventStream.concat.apply null,
-    for key, val of data
+    for name in ['aaa', 'bbb']
       gulp.src 'input/template.txt'
-        .pipe consolidate 'lodash', val
         .pipe rename
-          basename: key
+          basename: name
           extname: '.txt'
         .pipe gulp.dest 'output/'

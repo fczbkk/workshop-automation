@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "Minifying JS files...";
+uglifyjs ./build/index.js -o ./build/index.min.js;
+echo "DONE";

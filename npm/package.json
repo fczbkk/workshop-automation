@@ -1,0 +1,12 @@
+{
+  "name": "npm-as-build-tool",
+  "version": "1.0.0",
+  "description": "How to use NPM as build tool.",
+  "scripts": {
+    "init": "npm install coffee-script less uglify-js -g",
+    "js": "coffee --compile --output ./build ./src/index.coffee",
+    "css": "lessc ./src/index.less ./build/index.css",
+    "build": "npm run js & npm run css",
+    "minify": "./tasks/minify"
+  }
+}

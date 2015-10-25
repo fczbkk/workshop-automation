@@ -19,7 +19,8 @@ gulp.task('src', function() {
 /* gulp-dest (vinyl) */
 
 gulp.task('dest', function() {
-  gulp.src('input/**/*').pipe(gulp.dest('output'));
+  gulp.src('input/**/*')
+    .pipe(gulp.dest('output'));
 });
 
 

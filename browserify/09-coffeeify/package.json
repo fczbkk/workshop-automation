@@ -1,0 +1,7 @@
+{
+  "name": "09-coffeeify",
+  "version": "1.0.0",
+  "devDependencies": {
+    "coffeeify": "^1.1.0"
+  }
+}

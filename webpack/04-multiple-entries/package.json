@@ -1,0 +1,7 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "dependencies": {
+    "webpack": "^1.12.2"
+  }
+}

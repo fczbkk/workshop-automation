@@ -1,0 +1,12 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "dependencies": {
+    "css-loader": "^0.21.0",
+    "file-loader": "^0.8.4",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.7.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6"
+  }
+}

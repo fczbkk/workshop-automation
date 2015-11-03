@@ -1,0 +1,22 @@
+@unit: 20px;
+
+.article {
+
+  border: (@unit/2) solid red;
+  font-size: @unit;
+  font-family: sans-serif;
+
+  .title, .content {
+    padding: @unit;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: (@unit*2);
+  }
+
+  .content {
+    background: yellow;
+  }
+
+}

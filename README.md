@@ -7,7 +7,7 @@ http://www.vzhurudolu.cz/kurzy/grunt-gulp
 
 * WINDOWS: Niektoré moduly vyžadujú systémové knižnice a cesty, ktoré defaultne vo Windows nie sú. Odporúčam [nainštalovať **Visual Studio Express**](http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx), ktoré tie veci nainštaluje a nastaví automaticky. Samotné Visual Studio nebudeme potrebovať ani používať.
 * Väčšinu času budeš tráviť v príkazovej riadke. Kvalitný **terminál** ti zjednoduší a ušetrí prácu. Štandardné terminály väčšinou nestoja za nič. Odporúčam stiahnuť a nainštalovať:
-  * WINDOWS: [**ConEmu**](https://code.google.com/p/conemu-maximus5/)
+  * WINDOWS: [**ConEmu**](https://code.google.com/p/conemu-maximus5/) alebo [**Cmder**](http://cmder.net/)
   * MAC: [**iTerm 2**](http://iterm2.com/)
 * [Stiahni a nainštaluj **Git**](http://git-scm.com/downloads).
   * WINDOWS: Pri inštalácii v kroku "Adjusting your PATH environment" vybrať voľbu "Run Git from the Windows Command Prompt". Viď screenshot: ![](http://dev.opencascade.org/doc/overview/html/OCCT_GitGuide_V2_image002.png)

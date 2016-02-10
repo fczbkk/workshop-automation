@@ -68,10 +68,10 @@ gulp.task('merge-stream', function() {
   merge(
     gulp.src('input/library.js')
       .pipe(uglify())
-      .pipe(gulp.dest('output/'),
+      .pipe(gulp.dest('output/')),
     gulp.src('input/*.coffee')
       .pipe(coffee())
-      .pipe(gulp.dest('output/')
+      .pipe(gulp.dest('output/'))
   );
 });
 

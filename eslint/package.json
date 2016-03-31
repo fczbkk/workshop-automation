@@ -1,0 +1,11 @@
+{
+  "name": "eslint-demo",
+  "version": "0.0.1",
+  "dependencies": {
+    "eslint": "^2.5.3"
+  },
+  "scripts": {
+    "eslint": "eslint ./*.js --config ./.eslint.json",
+    "eslint:build": "npm run eslint -- --max-warnings 0"
+  }
+}
